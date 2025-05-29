@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phantom Company</title>
+   <script src="Extras/ScriptVenta.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link  href="Style/PrincipalStyle.css" rel="stylesheet">
+  <link href="Style/HistorialStyle.css" rel="stylesheet">
+  <link href="Style/CompraStyle.css" rel="stylesheet">
+</head>
+<body onload="inicializarFormularioVenta()">
+  <nav>
+    <ul>
+      <li><a href="Principal.html" class="active">Home</a></li>
+      <li><a href="Indicadores.html" target="_blank">Indicadores Economicos</a></li>
+      <li><a href="tasas.html" target="_blank">Tasas</a></li>
+      <li><a href="Compra de Moneda.html">Comprar</a></li>
+    </ul>
+  </nav>
+
+  <form id="formulario-venta">
+    <h2>Formulario de Venta de Moneda</h2>
+    <div class="fila">
+      <label for="tipoDocVenta">Tipo de Documento*</label>
+      <select id="tipoDocVenta" required></select>
+
+      <label for="numDocVenta">Número de Documento*</label>
+      <input type="text" id="numDocVenta" required>
+
+      <label for="nombreClienteVenta">Nombre del Cliente</label>
+      <input type="text" id="nombreClienteVenta" readonly>
+    </div>
+
+    <div class="fila">
+      <label for="monedaVenta">Moneda a Vender*</label>
+      <select id="monedaVenta" required></select>
+
+      <label for="tasaVenta">Tasa de Venta</label>
+      <input type="text" id="tasaVenta" readonly>
+
+      <label for="cantidadVenta">Cantidad a Vender*</label>
+      <input type="number" id="cantidadVenta" required>
+    </div>
+
+    <div class="fila">
+      <label for="valorClientePaga">Valor que Paga el Cliente</label>
+      <input type="text" id="valorClientePaga" readonly>
+
+      <label for="fechaVenta">Fecha</label>
+      <input type="text" id="fechaVenta" readonly>
+
+      <label for="horaVenta">Hora</label>
+      <input type="text" id="horaVenta" readonly>
+    </div>
+
+    <div class="fila botones">
+      <button type="submit">Guardar Transacción</button>
+      <button type="reset">Limpiar Formulario</button>
+    </div>
+  </form>
+
+</body>
+<footer>
+  <p>&copy; 2023 Phantom Company. Todos los derechos reservados.</p>
+  <p>Desarrollado por PlayMaker (Phantom pagame lo que me debes >:c)</p>
+</footer>
+</html>
